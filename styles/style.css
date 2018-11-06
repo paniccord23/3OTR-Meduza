@@ -3,9 +3,47 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-header {
+header,
+.panel,
+.timestamp {
   font-family: Arial, sans-serif;
 }
 h3 {
   font-family: Georgia, serif;
+}
+body > header {
+  display: flex;
+
+  height: 45px;
+
+  letter-spacing: 1px;
+
+  color: #f2f2f2;
+  background-color: rgb(38, 38, 38);
+
+  font-size: 13px;
+
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo {
+  height: 21px;
+  margin-left: 15px;
+}
+body > header ul {
+  display: flex;
+}
+body > header li {
+  padding-right: 15px;
+  /* чтобы все буквы большими сделать */
+
+  text-transform: uppercase;
+
+}
+header ul {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
 }
