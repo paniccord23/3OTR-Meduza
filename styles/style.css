@@ -3,9 +3,12 @@
   /* свойство, которое позволяет игнорировать при подсчете ширины и высоты паддинги и марджины */
   box-sizing: border-box;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+-webkit-font-smoothing: antialiased;
+
+-moz-osx-font-smoothing: grayscale;
+
+  }
+
 header,
 .panel,
 .timestamp {
@@ -14,72 +17,94 @@ header,
 h3 {
   font-family: Georgia, serif;
 }
+
+a {
+  text-decoration: none;
+
+color: #fff;
+  }
+
+a:hover {
+  color: #b88b58;
+}
+nav ul li{
+  padding-right: 20px;
+}
 body > header {
   display: flex;
 
-  height: 45px;
+align-items: center;
 
-  letter-spacing: 1px;
+justify-content: space-between;
 
-  color: #f2f2f2;
-  background-color: rgb(38, 38, 38);
+height: 45px;
 
-  font-size: 13px;
+letter-spacing: 1px;
 
-  justify-content: space-between;
-  align-items: center;
-}
+color: #f2f2f2;
+
+background-color: rgb(38, 38, 38);
+
+font-size: 13px;
+
+  }
 main {
   height: 100vh;
-  padding-top: 15px;
 
-  background-color: rgb(242, 242, 242);
+padding-top: 15px;
 
-}
+background-color: rgb(242, 242, 242);
+  }
 section {
   width: 90vw;
-  margin: 0 auto;
 
-  border: 1px solid #ccc;
-  border-top: 4px solid #b88b58;
-  background-color: #fff;
+margin: 0 auto;
 
+border: 1px solid #ccc;
 
-}
+border-top: 4px solid #b88b58;
+
+background-color: #fff;
+  }
 .logo {
   height: 21px;
-  margin-left: 15px;
-}
+
+margin-left: 15px;
+  }
 body > header ul {
   display: flex;
 }
 body > header li {
   padding-right: 0 15px;
-  /* чтобы все буквы большими сделать */
+
+/* чтобы все буквы большими сделать */
 
   text-transform: uppercase;
-
-
-}
+  }
 header ul {
   display: inline-flex;
 
-  justify-content: center;
-  align-items: center;
-}
+align-items: center;
+
+justify-content: center;
+
+  }
 .panel {
   position: relative;
 
-  height: 45px;
-  padding: 15px;
+height: 45px;
 
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
+padding: 15px;
 
-  font-weight: bold;
+border-bottom: 1px solid #ccc;
 
-}
+background-color: #fff;
+
+font-weight: bold;
+
+  }
 .panel button{
   position: absolute;
-  right: 0;
-}
+
+right: 0;
+  }
