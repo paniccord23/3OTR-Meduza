@@ -28,9 +28,13 @@ color: #fff;
 a:hover {
   color: #b88b58;
 }
-nav ul li{
+nav ul li {
   padding-right: 20px;
 }
+ul li:hover {
+  color: #676767;
+}
+/* как сделать изменение цвета иконки при наведении */
 body > header {
   display: flex;
 
