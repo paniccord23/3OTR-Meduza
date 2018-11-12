@@ -7,7 +7,7 @@
 
 -moz-osx-font-smoothing: grayscale;
 
-  }
+}
 
 header,
 .panel,
@@ -22,7 +22,8 @@ a {
   text-decoration: none;
 
 color: #fff;
-  }
+
+}
 
 a:hover {
   color: #b88b58;
@@ -47,14 +48,15 @@ background-color: rgb(38, 38, 38);
 
 font-size: 13px;
 
-  }
+}
 main {
   height: 100vh;
 
 padding-top: 15px;
 
 background-color: rgb(242, 242, 242);
-  }
+
+}
 section {
   width: 90vw;
 
@@ -65,12 +67,14 @@ border: 1px solid #ccc;
 border-top: 4px solid #b88b58;
 
 background-color: #fff;
-  }
+
+}
 .logo {
   height: 21px;
 
 margin-left: 15px;
-  }
+
+}
 body > header ul {
   display: flex;
 }
@@ -80,7 +84,8 @@ body > header li {
 /* чтобы все буквы большими сделать */
 
   text-transform: uppercase;
-  }
+
+}
 header ul {
   display: inline-flex;
 
@@ -88,7 +93,7 @@ align-items: center;
 
 justify-content: center;
 
-  }
+}
 .panel {
   position: relative;
 
@@ -102,9 +107,10 @@ background-color: #fff;
 
 font-weight: bold;
 
-  }
+}
 .panel button{
   position: absolute;
 
 right: 0;
-  }
+
+}
