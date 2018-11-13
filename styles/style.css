@@ -4,7 +4,6 @@
   box-sizing: border-box;
 
 -webkit-font-smoothing: antialiased;
-
 -moz-osx-font-smoothing: grayscale;
 
 }
@@ -29,12 +28,13 @@ a:hover {
   color: #b88b58;
 }
 nav ul li {
-  padding-right: 20px;
   margin-left: 10px;
+  padding-right: 20px;
 }
 
 div ul li {
   display: inline-flex;
+
   padding-left: 15px;
 
 }
@@ -42,37 +42,35 @@ div ul li::after {
   content: " ";
 
   border-left:  1px solid #676767;
-  
+
 }
 div ul li:hover  {
   color: #676767;
 }
 div ul li:last-child {
   margin-right: 20px;
+
   border: none;
 }
 /* как сделать изменение цвета иконки при наведении */
 body > header {
   display: flex;
 
-align-items: center;
-
-justify-content: space-between;
-
 height: 45px;
 
 letter-spacing: 1px;
 
 color: #f2f2f2;
-
 background-color: rgb(38, 38, 38);
 
 font-size: 13px;
 
+align-items: center;
+justify-content: space-between;
+
 }
 main {
   height: 100vh;
-
 padding-top: 15px;
 
 background-color: rgb(242, 242, 242);
@@ -80,19 +78,55 @@ background-color: rgb(242, 242, 242);
 }
 section {
   width: 90vw;
-
 margin: 0 auto;
 
 border: 1px solid #ccc;
-
 border-top: 4px solid #b88b58;
-
 background-color: #fff;
+
+}
+.container {
+  display: flex;
+}
+.is-important {
+  width: 50%;
+  margin-right: 15px;
+  padding:  10px 18px 21px;
+}
+/* .container-right {
+  display: flex;
+
+  flex-wrap: wrap;
+
+}
+.card {
+  width: 50%;
+} */
+.container-right {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+.card {
+  /* inline-flex */
+  display: inline-flex;
+
+  width: 50%;
+  margin-top: 16px;
+  padding: 15px 15px 14px;
+
+  flex-flow: column nowrap;
+}
+.timestamp {
+  position: relative;
+
+  display: inline-flex;
 
 }
 .logo {
   height: 21px;
-
 margin-left: 15px;
 
 }
@@ -101,7 +135,6 @@ body > header ul {
 }
 body > header li {
   padding-right: 0 15px;
-
 /* чтобы все буквы большими сделать */
 
   text-transform: uppercase;
@@ -111,7 +144,6 @@ header ul {
   display: inline-flex;
 
 align-items: center;
-
 justify-content: center;
 
 }
@@ -119,11 +151,9 @@ justify-content: center;
   position: relative;
 
 height: 45px;
-
 padding: 15px;
 
 border-bottom: 1px solid #ccc;
-
 background-color: #fff;
 
 font-weight: bold;
@@ -131,7 +161,6 @@ font-weight: bold;
 }
 .panel button{
   position: absolute;
-
 right: 0;
 
 }
