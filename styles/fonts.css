@@ -5,8 +5,26 @@
 }
 /* woff - это шрифты только для сайта, но мы можем его сконвертировать в ттф или отт и работать дальше с ним */
   @font-face {
-    font-family: "Proxima Nova";
+    font-family: "ProximaNova-Bold";
     font-weight: bold;
+    /* обязательно при подключении шрифтов указывать формат */
+
+    src: url(../fonts/ProximaNova-Bold) format("woff");
+
+  }
+  @font-face {
+    font-family: "Proxima Nova";
+    font-weight: 400;
+    /* посмотреть сайт font-weight mdn */
+    /* обязательно при подключении шрифтов указывать формат */
+
+    src: url(../fonts/ProximaNova-Bold) format("woff");
+
+  }
+  @font-face {
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    /* посмотреть сайт font-weight mdn */
     /* обязательно при подключении шрифтов указывать формат */
 
     src: url(../fonts/ProximaNova-Bold) format("woff");
