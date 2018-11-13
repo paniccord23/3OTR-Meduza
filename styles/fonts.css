@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "PF Regal";
+
+  src: url(../fonts/PFRegal.woff);
+}
+/* woff - это шрифты только для сайта, но мы можем его сконвертировать в ттф или отт и работать дальше с ним */
+  @font-face {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    /* обязательно при подключении шрифтов указывать формат */
+
+    src: url(../fonts/ProximaNova-Bold) format("woff");
+
+  }

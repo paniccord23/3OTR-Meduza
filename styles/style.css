@@ -85,6 +85,7 @@ border-top: 4px solid #b88b58;
 background-color: #fff;
 
 }
+/* 1 вариант
 .container {
   display: flex;
 }
@@ -93,15 +94,7 @@ background-color: #fff;
   margin-right: 15px;
   padding:  10px 18px 21px;
 }
-/* .container-right {
-  display: flex;
 
-  flex-wrap: wrap;
-
-}
-.card {
-  width: 50%;
-} */
 .container-right {
   display: flex;
 
@@ -110,7 +103,7 @@ background-color: #fff;
   flex-flow: row wrap;
 }
 .card {
-  /* inline-flex */
+
   display: inline-flex;
 
   width: 50%;
@@ -122,9 +115,12 @@ background-color: #fff;
 .timestamp {
   position: relative;
 
-  display: inline-flex;
+  display: inline-flex; }*/
 
-}
+/* inline-fleх выравнивание vertical-align работает на inline элементах*/
+
+
+
 .logo {
   height: 21px;
 margin-left: 15px;
@@ -164,3 +160,40 @@ font-weight: bold;
 right: 0;
 
 }
+
+/* 2  вариант как сделать 4 карточки*/
+.container {
+  display: flex;
+
+  padding: 8px 18px 21px;
+}
+.is-important {
+  width: 50%;
+}
+.container-right {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+/* задали флекс для того чтобы дети выстраивались в колоку
+флекс помогает потомкам родителям задавать размеры котор будут занимать все доступное место
+ */
+.container-right .card {
+  display: flex;
+
+  width: 50%;
+  height: 100%;
+
+  flex-flow: column nowrap;
+
+}
+.container-right .card h3 {
+  flex: 1;
+}
+.top-stories {
+  height: 350px;
+  padding: 16px 18px
+}
+/* flex-basis для ширины */
