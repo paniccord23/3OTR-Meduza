@@ -11,13 +11,34 @@
 
 header,
 .panel,
-.timestamp {
-  font-family: Arial, sans-serif;
+.top-stories__container__card__timestamp {
+  font-family: "Proxima Nova", sans-serif;
 }
 h3 {
-  font-family: Georgia, serif;
+  font-family: "PF Regal", serif;
 }
+body > header {
+  display: flex;
 
+height: 45px;
+
+letter-spacing: 1px;
+
+color: #f2f2f2;
+background-color: rgb(38, 38, 38);
+
+font-size: 13px;
+
+align-items: center;
+justify-content: space-between;
+
+}
+.logo {
+  height: 21px;
+margin-top: -6px;
+margin-left: 15px;
+
+}
 a {
   text-decoration: none;
 
@@ -54,22 +75,7 @@ div ul li:last-child {
   border: none;
 }
 /* как сделать изменение цвета иконки при наведении */
-body > header {
-  display: flex;
 
-height: 45px;
-
-letter-spacing: 1px;
-
-color: #f2f2f2;
-background-color: rgb(38, 38, 38);
-
-font-size: 13px;
-
-align-items: center;
-justify-content: space-between;
-
-}
 main {
   height: 100vh;
 padding-top: 15px;
@@ -86,6 +92,72 @@ border-top: 4px solid #b88b58;
 background-color: #fff;
 
 }
+.top-stories__container {
+  display: flex;
+
+  /* padding: 18px; */
+}
+.card {
+  height: 140px;
+  margin-top: 15px;
+}
+.top-stories__container__card--is-important {
+  display: flex;
+
+  width: 50%;
+  /* прописываем размер чтобы */
+
+  font-size: 34px;
+
+  flex-flow: column;
+
+}
+.top-stories__card-list .top-stories__container_{
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: row wrap;
+}
+/* задали флекс для того чтобы дети выстраивались в колоку
+флекс помогает потомкам родителям задавать размеры котор будут занимать все доступное место
+ */
+.top-stories__card-list__card {
+  display: flex;
+
+  width: 50%;
+
+  flex-flow: column nowrap;
+
+}
+.top-stories__card-list .card h3 {
+  flex: 1;
+}
+.top-stories {
+  height: 370px;
+  padding: 16px 18px
+}
+
+/* flex-basis для ширины */
+/* бем способ наименования классов, можем связно называть комопненты топсторис- родитель ниж подчерк хэдер ребенок */
+
+/* ru.bem.info - обязательно посмотреть про бем */
+ .top-stories__header {
+   padding: 16px 18px 0;
+
+   text-transform: uppercase;
+
+   color: gray;
+
+   font-size: 14px;
+   font-weight: 600;
+ }
+.top-stories__container__card__timestamp {
+  color: gray;
+
+  font-size: 12px;
+}
+
 /* 1 вариант
 .container {
   display: flex;
@@ -122,19 +194,17 @@ background-color: #fff;
 
 
 
-.logo {
-  height: 21px;
-margin-left: 15px;
 
-}
 body > header ul {
   display: flex;
 }
 body > header li {
   padding-right: 0 15px;
-/* чтобы все буквы большими сделать */
 
   text-transform: uppercase;
+/* чтобы все буквы большими сделать */
+
+font-weight: 600;
 
 }
 header ul {
@@ -153,6 +223,7 @@ padding: 15px;
 border-bottom: 1px solid #ccc;
 background-color: #fff;
 
+  font-weight: 600;
 font-weight: bold;
 
 }
@@ -163,38 +234,3 @@ right: 0;
 }
 
 /* 2  вариант как сделать 4 карточки*/
-.container {
-  display: flex;
-
-  padding: 8px 18px 21px;
-}
-.is-important {
-  width: 50%;
-}
-.container-right {
-  display: flex;
-
-  width: 50%;
-
-  flex-flow: row wrap;
-}
-/* задали флекс для того чтобы дети выстраивались в колоку
-флекс помогает потомкам родителям задавать размеры котор будут занимать все доступное место
- */
-.container-right .card {
-  display: flex;
-
-  width: 50%;
-  height: 100%;
-
-  flex-flow: column nowrap;
-
-}
-.container-right .card h3 {
-  flex: 1;
-}
-.top-stories {
-  height: 350px;
-  padding: 16px 18px
-}
-/* flex-basis для ширины */

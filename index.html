@@ -60,21 +60,22 @@
   <main>
     <!--  задали главной секции класс, потому что одни будут только с текстом, а другие с картинками -->
     <section class=" top-stories">
-      <header>
+      <header class="top-stories__header">
         Новости
       </header>
-      <div class="container">
-        <!-- сделали 2 класса, так как одинаковые элементы и отличаются только размером -->
-        <div class="card is-important">
+      <!-- родитель top-stories__container -->
+      <div class="top-stories__container">
+        <!-- сделали 2 класса, так как одинаковые элементы и отличаются только размером двумя черточками -- мы отделяем модификаторы которые влияют на нашу карточку -->
+        <div class="top-stories__container__card top-stories__container__card--is-important">
           <h3>«Коммерсант» узнал об&nbsp;отмене переговоров Путина и&nbsp;Трампа по&nbsp;просьбе президента Франции</h3>
           <div class="timestamp">
             <img src="images/check.svg" alt="Check"> час назад
           </div>
         </div>
-        <div class="container-right">
-          <div class="card">
+        <div class="top-stories__card-list">
+          <div class="top-stories__card-list__card">
             <h3>«Коммерсант» узнал об&nbsp;отмене переговоров Путина и&nbsp;Трампа по&nbsp;просьбе президента Франции</h3>
-            <div class="timestamp">
+            <div class="top-stories__container__card__timestamp">
               <img src="images/check.svg" alt="Check"> 6 минут назад
             </div>
           </div>
@@ -84,15 +85,15 @@
               <img src="images/check.svg" alt="Check"> 6 минут назад
             </div>
           </div>
-          <div class="card">
+          <div class="top-stories__card-list__card">
             <h3>РБК: в&nbsp;Москве обстреляли автомобиль бизнесмена из&nbsp;списка Forbes Олега Бурлакова</h3>
-            <div class="timestamp">
+            <div class="top-stories__container__card__timestamp">
               <img src="images/check.svg" alt="Check"> 6 минут назад
             </div>
           </div>
-          <div class="card">
+          <div class="top-stories__card-list__card">
             <h3>В&nbsp;Подмосковье закрывают школу, основанную Лениным. Родители опасаются, что территорию продадут и&nbsp;застроят</h3>
-            <div class="timestamp">
+            <div class="top-stories__container__card__timestamp">
               <img src="images/check.svg" alt="check"> 6 минут назад
             </div>
           </div>
